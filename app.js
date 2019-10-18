@@ -2,7 +2,7 @@
 
 const WebSocket = require('ws')
 
-const wss = new WebSocket.Server({ port: 4000 })
+const wss = new WebSocket.Server({ port: process.env.PORT || 4000 })
 
 
 var chatters=[];
